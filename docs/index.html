@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en">
+<html lang="en" class="unauthenticated">
 
 <head>
   
@@ -65,6 +65,8 @@
         <li><a href="#/contact" class="button medium wide icon fa-phone" title="Contact">Contact</a></li>
       
         <li><a href="https://www.alpbrothers.at" class="button medium wide icon special fa-language" title="Deutsch">Deutsch</a></li>
+      
+        <li><a href="#/cmd/signout" class="button medium wide icon special fa-sign-out auth-only" title="Sign out">Sign out</a></li>
       
       <li class="media">
        
@@ -412,13 +414,13 @@
 
   <!-- Scripts -->
   
-  <script src="https://www.alpbrothers.at/js/external.js"></script>
+  <script src="https://www.alpbrothers.at/js/vendor.js"></script>
   <script src="https://www.alpbrothers.at/js/app.js"></script>
   <script type="text/javascript">
     // init app on document ready
     $(document).ready(() =>
     {
-      $alpbros.$app.init({"root":"https://www.alpbrothers.at/","lang":"en","shownEvents":5,"preloadPages":["events","event"],"ctx":{"apikey":"bd990ffc684f77f510084d1f7bf1d44bd0011ea33ea4215ac8f4e2d9a59d640f","baseurl":"https://ft-christoph-schaunig.oraclecloud2.dreamfactory.com/api/v2","db":"db_alpbros"},"res":{"level":{"None":"Everyone","All":"Everyone","Beginner":"Beginner","Advanced":"Advanced"},"eventTypes":{"TechniqueTraining":{"name":"Technique Training","icon":"fa-cogs","offer":true},"GuidedTour":{"name":"Guided Tours","icon":"fa-bicycle","offer":true},"Camp":{"name":"Camps","icon":"fa-home","offer":false},"MechanicalTraining":{"name":"Mechanical Training","icon":"fa-wrench","offer":false}},"weekdays":[],"main":{"title":"Alpbrothers - Your mountainbike guide at Lake Faak in Carinthia"},"upcoming":{"dateFormat":"dd DD.MM.YYYY HH:mm a"},"events":{"title":"Alpbrothers - Events","level":"Level","dateFormat":"dddd MMMM D YYYY<br />HH:mm a - HH:mm a","multiDayFormat":"dd MMMM D<br />- dd MMMM D YYYY","fromFormat":"dddd MMMM D","erlebniscardPrice":"free (**)","imgPath":"img/events/"}},"pages":["main","event-workshop","event","events","impressum","legalnotice"]});
+      $alpbros.$app.init({"root":"https://www.alpbrothers.at/","lang":"en","shownEvents":5,"preloadPages":["events","event"],"ctx":{"apikey":"bd990ffc684f77f510084d1f7bf1d44bd0011ea33ea4215ac8f4e2d9a59d640f","baseurl":"https://ft-christoph-schaunig.oraclecloud2.dreamfactory.com/api/v2","db":"db_alpbros"},"res":{"level":{"None":"Everyone","All":"Everyone","Beginner":"Beginner","Advanced":"Advanced"},"eventTypes":{"TechniqueTraining":{"name":"Technique Training","icon":"fa-cogs","offer":true},"GuidedTour":{"name":"Guided Tours","icon":"fa-bicycle","offer":true},"Camp":{"name":"Camps","icon":"fa-home","offer":false},"MechanicalTraining":{"name":"Mechanical Training","icon":"fa-wrench","offer":false}},"weekdays":[],"main":{"title":"Alpbrothers - Your mountainbike guide at Lake Faak in Carinthia"},"upcoming":{"dateFormat":"dd DD.MM.YYYY HH:mm a"},"events":{"title":"Alpbrothers - Events","level":"Level","dateFormat":"dddd MMMM D YYYY<br />HH:mm a - HH:mm a","multiDayFormat":"dd MMMM D<br />- dd MMMM D YYYY","fromFormat":"dddd MMMM D","erlebniscardPrice":"free (**)","imgPath":"img/events/"}},"pages":["main","admin","event-workshop","event","events","impressum","legalnotice","signin"]});
     });
   </script>
   
