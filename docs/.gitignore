@@ -1,6 +1,0 @@
-# Include your project-specific ignores in this file
-*.sublime-workspace
-node_modules
-.DS_Store
-.node
-*.log
